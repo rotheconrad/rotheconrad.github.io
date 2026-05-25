@@ -654,6 +654,13 @@ h3 {
   outline: none;
 }
 
+.inline-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  margin-top: 18px;
+}
+
 .publication-head {
   max-width: 820px;
   margin-bottom: 30px;
