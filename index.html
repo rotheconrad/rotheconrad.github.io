@@ -234,67 +234,278 @@
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">Selected Tools &amp; Infrastructure</p>
-            <h2>Project categories ready for public names as they mature.</h2>
+            <h2>Open-source and emerging infrastructure for genomics teams.</h2>
             <p>
-              Active-development project names are intentionally withheld here. This section is structured
-              so public names and repository links can be added later without redesigning the site.
+              Current plant genomics tools are listed first, followed by earlier microbial evolution,
+              environmental genomics, and metagenomics repositories that shaped the underlying systems practice.
             </p>
           </div>
 
-          <div class="tool-grid">
-            <!-- UPDATE PROJECT NAMES: Replace "Name forthcoming" and add repository links when projects are public. -->
-            <article class="tool-card">
-              <p class="tool-status">Name forthcoming</p>
-              <h3>Evidence-aware multi-agent pangenome systems</h3>
-              <p>Breeder-ready plant genomics systems that connect claims, evidence, annotations, and workflow outputs.</p>
-            </article>
+          <div class="tool-section">
+            <div class="tool-section-title">
+              <p class="section-kicker">Active Development</p>
+              <h3>Unnamed systems</h3>
+            </div>
+            <!-- UPDATE PROJECT NAMES: Replace unnamed categories as active-development systems become public. -->
+            <div class="tool-grid tool-grid-compact">
+              <article class="tool-card tool-card-featured">
+                <p class="tool-status">Name forthcoming</p>
+                <h3>Evidence-aware multi-agent pangenome systems</h3>
+                <p>
+                  Breeder-ready plant genomics systems that connect claims, evidence, annotations, workflow
+                  outputs, and reproducible decision trails.
+                </p>
+              </article>
+            </div>
+          </div>
 
-            <article class="tool-card">
-              <p class="tool-status">Name forthcoming</p>
-              <h3>Comparative target-private variation tools</h3>
-              <p>Methods for identifying target-private alleles, candidate graph segments, and discriminating genomic signal.</p>
-            </article>
+          <div class="tool-section">
+            <div class="tool-section-title">
+              <p class="section-kicker">Current Plant Genomics</p>
+              <h3>Named tools and workflows</h3>
+            </div>
+            <div class="tool-grid">
+              <article class="tool-card">
+                <p class="tool-status">Public release pending</p>
+                <h3>PanScout</h3>
+                <p>
+                  Prioritizes accessions for long-read sequencing by estimating expected marginal contribution
+                  to pangenome diversity from existing short-read evidence.
+                </p>
+                <p class="tool-meta">Repository named; public access pending.</p>
+              </article>
 
-            <article class="tool-card">
-              <p class="tool-status">Name forthcoming</p>
-              <h3>Long-read accession prioritization workflows</h3>
-              <p>Decision support for sequencing panels based on expected contribution to pangenome diversity.</p>
-            </article>
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>Panex Privus</h3>
+                <p>
+                  Comparative pangenome toolkit for discovering target-private alleles and graph segments
+                  shared within a focal group and absent from off-target genomes.
+                </p>
+                <a class="tool-link" href="https://github.com/USDA-ARS-GBRU/Panex_Privus" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
 
-            <article class="tool-card">
-              <p class="tool-status">Name forthcoming</p>
-              <h3>Reference-guided assembly curation utilities</h3>
-              <p>Contig sorting, chimeric contig review and splitting, dot-plot review, scaffolding, and graph-supported gap filling.</p>
-            </article>
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>ChromoSort</h3>
+                <p>
+                  Reference-guided assembly utilities for contig sorting, chimeric contig review and splitting,
+                  dot-plot curation, scaffolding, and graph-supported gap filling.
+                </p>
+                <a class="tool-link" href="https://github.com/rotheconrad/chromosort" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
 
-            <article class="tool-card">
-              <p class="tool-status">Name forthcoming</p>
-              <h3>Assembly-to-SNP-chip identity validation</h3>
-              <p>Workflows for validating sample identity and catching mismatches between assemblies and marker data.</p>
-            </article>
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>genotype-assembly2snpchip</h3>
+                <p>
+                  Generic workflow for validating genome assembly identities against SNP-chip or marker-panel
+                  VCFs using targeted genotyping and gtcheck summaries.
+                </p>
+                <a class="tool-link" href="https://github.com/USDA-ARS-GBRU/genotype-assembly2snpchip" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
 
-            <article class="tool-card">
-              <p class="tool-status">Name forthcoming</p>
-              <h3>Primer BLAST filtering for marker validation</h3>
-              <p>Filtering tools that help review marker specificity, candidate amplicons, and validation evidence.</p>
-            </article>
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>BLAST Primer Filter</h3>
+                <p>
+                  Screens primer-pair BLASTN hits against genome assemblies and reports viable amplicons,
+                  failed hits, browser annotations, and genome-wide plots.
+                </p>
+                <a class="tool-link" href="https://github.com/USDA-ARS-GBRU/BLAST_primer_filter" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <div class="tool-section">
+            <div class="tool-section-title">
+              <p class="section-kicker">Foundational PhD Work</p>
+              <h3>Microbial evolution, metagenomics, and comparative genomics</h3>
+            </div>
+            <div class="tool-grid tool-grid-foundation">
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>Metagenomic Population Tracking</h3>
+                <p>
+                  KDE-based ANIr workflow for distinguishing identical versus distinct sequence-discrete
+                  microbial populations across short-read metagenomes.
+                </p>
+                <a class="tool-link" href="https://github.com/rotheconrad/Metagenomic_Population_Tracking" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
+
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>F100 Prokaryote Recombination</h3>
+                <p>
+                  Workflow for detecting recent homologous recombination using 100% identical reciprocal
+                  best-match genes across prokaryotic genomes.
+                </p>
+                <a class="tool-link" href="https://github.com/rotheconrad/F100_Prok_Recombination" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
+
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>HeatSeq</h3>
+                <p>
+                  Clustering and heatmap visualization for genomic and metagenomic distance matrices,
+                  including ANI, AAI, Mash, beta distance, and related measures.
+                </p>
+                <a class="tool-link" href="https://github.com/rotheconrad/HeatSeq" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
+
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>in-situ Gene Coverage</h3>
+                <p>
+                  Workflow for calculating ANIr, sequence depth, and sequence breadth by gene, intergenic
+                  region, contig, and whole genome from metagenomic read recruitment.
+                </p>
+                <a class="tool-link" href="https://github.com/rotheconrad/00_in-situ_GeneCoverage" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
+
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>ROCkIn</h3>
+                <p>
+                  Preparation pipeline for building ROCker models for functional gene detection from
+                  short-read sequence data.
+                </p>
+                <a class="tool-link" href="https://github.com/rotheconrad/ROCkIn" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
+
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>Population Genome Simulator</h3>
+                <p>
+                  Simulator for generating genomes around ANI distributions with configurable core and
+                  accessory gene structure for method development.
+                </p>
+                <a class="tool-link" href="https://github.com/rotheconrad/Population-Genome-Simulator" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
+
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>Kraken Bracken Plot</h3>
+                <p>
+                  Creates publication-ready stacked bar plots from Kraken, Kraken 2, and Bracken taxonomic
+                  profiling output, including optional unclassified-read adjustment.
+                </p>
+                <a class="tool-link" href="https://github.com/rotheconrad/Kraken-Bracken-plot" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
+
+              <article class="tool-card">
+                <p class="tool-status">Public repository</p>
+                <h3>EggNog Annotation Plots</h3>
+                <p>
+                  Plotting and statistical utilities for comparing EggNOG Mapper annotation categories
+                  across genomes, MAGs, metagenomes, or experimental groups.
+                </p>
+                <a class="tool-link" href="https://github.com/rotheconrad/EggNog_Annotation_Plots" target="_blank" rel="noreferrer">
+                  View repository
+                </a>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section" id="publications">
-        <div class="container two-column">
-          <div>
+        <div class="container">
+          <div class="publication-head">
             <p class="section-kicker">Publications</p>
             <h2>Selected publications and citation record.</h2>
-          </div>
-          <div class="prose callout">
-            <!-- UPDATE PUBLICATIONS: Add selected publications here as a short curated list when ready. -->
             <p>
-              A curated publication list will be added here. For now, use Google Scholar for the current
-              publication and citation record.
+              Google Scholar remains the best place for the complete and current publication record. A few
+              representative papers are highlighted here for quick orientation.
             </p>
-            <a class="text-link" href="https://scholar.google.com/citations?user=RJZ98uQAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">View Google Scholar profile</a>
+            <a class="button button-primary" href="https://scholar.google.com/citations?user=RJZ98uQAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">
+              View Google Scholar
+            </a>
+          </div>
+
+          <div class="publication-grid">
+            <!-- UPDATE PUBLICATIONS: Keep this short; use Google Scholar as the canonical full record. -->
+            <article class="publication-card">
+              <p class="publication-meta">ISME Communications | 2026</p>
+              <h3>An ANIr-based methodology to determine if two sequence-discrete populations are identical and identify cosmopolitan prokaryotic populations</h3>
+              <p>
+                Introduces a KDE-based ANIr framework for tracking microbial populations across metagenomes
+                and distinguishing true target populations from close relatives.
+              </p>
+              <a class="text-link" href="https://doi.org/10.1093/ismeco/ycag068" target="_blank" rel="noreferrer">Read paper</a>
+            </article>
+
+            <article class="publication-card">
+              <p class="publication-meta">Applied and Environmental Microbiology | 2026</p>
+              <h3>Metagenome-based vertical profiling of the Gulf of Mexico highlights its uniqueness and far-reaching effects of freshwater input</h3>
+              <p>
+                Deep metagenomic survey of Gulf of Mexico water-column diversity, recovering novel MAGs
+                and depth-structured community signals.
+              </p>
+              <a class="text-link" href="https://doi.org/10.1128/aem.02589-25" target="_blank" rel="noreferrer">Read paper</a>
+            </article>
+
+            <article class="publication-card">
+              <p class="publication-meta">Microbiology Spectrum | 2025</p>
+              <h3>ROCker models for reliable detection and typing of short-read sequences carrying mcr, erm, mph, and lnu antibiotic resistance genes</h3>
+              <p>
+                Develops marker-aware models for detecting and typing antimicrobial resistance gene families
+                from short-read sequencing data.
+              </p>
+              <a class="text-link" href="https://doi.org/10.1128/spectrum.02413-25" target="_blank" rel="noreferrer">Read paper</a>
+            </article>
+
+            <article class="publication-card">
+              <p class="publication-meta">Nature Communications | 2024</p>
+              <h3>Microbial species and intraspecies units exist and are maintained by ecological cohesiveness coupled to high homologous recombination</h3>
+              <p>
+                Connects microbial species and genomovar structure to ecological cohesiveness and genome-wide
+                homologous recombination.
+              </p>
+              <a class="text-link" href="https://doi.org/10.1038/s41467-024-53787-0" target="_blank" rel="noreferrer">Read paper</a>
+            </article>
+
+            <article class="publication-card">
+              <p class="publication-meta">mBio | 2024</p>
+              <h3>An ANI gap within bacterial species that advances the definitions of intra-species units</h3>
+              <p>
+                Supports refined bacterial intraspecies units by identifying a recurring ANI gap within
+                species-level genome clusters.
+              </p>
+              <a class="text-link" href="https://doi.org/10.1128/mbio.02696-23" target="_blank" rel="noreferrer">Read paper</a>
+            </article>
+
+            <article class="publication-card">
+              <p class="publication-meta">The ISME Journal | 2022</p>
+              <h3>Toward quantifying the adaptive role of bacterial pangenomes during environmental perturbations</h3>
+              <p>
+                Uses isolate genomes and companion metagenomes to examine how bacterial pangenomes respond
+                to environmental change.
+              </p>
+              <a class="text-link" href="https://doi.org/10.1038/s41396-021-01149-9" target="_blank" rel="noreferrer">Read paper</a>
+            </article>
           </div>
         </div>
       </section>
