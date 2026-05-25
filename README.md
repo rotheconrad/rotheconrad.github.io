@@ -61,4 +61,4 @@ Search for `UPDATE` in `index.html` to find these sections quickly.
 
 - The site is plain HTML, CSS, and JavaScript for easy maintenance.
 - `.nojekyll` is included so GitHub Pages serves the static files directly without Jekyll processing.
-- The visible GitHub links currently use `https://github.com/rotheconrad`, based on the GitHub account referenced in the prompt. Replace with `https://github.com/newrothe` if that is the intended public-facing profile.
+- The visible profile links currently use Roth's GitHub, Google Scholar, LinkedIn, and UGA email.
