@@ -2,6 +2,8 @@
 
 A clean, static GitHub Pages profile site for Roth E. Conrad, focused on computational genomics, pangenomics, comparative genomics, scientific AI systems, and open-source bioinformatics infrastructure.
 
+Live site: <https://rotheconrad.github.io/>
+
 ## Project Structure
 
 ```text
@@ -36,37 +38,13 @@ You can also open `index.html` directly in a browser, but a local server better 
 
 ## GitHub Pages Deployment
 
-The simplest robust deployment is GitHub Pages from the `main` branch.
-
-### Option 1: User Site
-
-Use this if you want the site at:
+This repository is configured as a GitHub Pages user site:
 
 ```text
-https://rotheconrad.github.io
+https://rotheconrad.github.io/
 ```
 
-1. Create a GitHub repository named `rotheconrad.github.io`.
-2. Put these files at the repository root.
-3. Commit and push to `main`.
-4. In GitHub, go to `Settings` -> `Pages`.
-5. Under `Build and deployment`, choose `Deploy from a branch`.
-6. Select branch `main` and folder `/root`.
-7. Save.
-
-### Option 2: Project Site
-
-Use this if you want the site under an existing repository, for example:
-
-```text
-https://rotheconrad.github.io/repository-name/
-```
-
-1. Put these files at the root of the repository, or in a `docs/` directory.
-2. In GitHub, go to `Settings` -> `Pages`.
-3. Choose `Deploy from a branch`.
-4. Select the branch and folder that contain `index.html`.
-5. Save.
+GitHub Pages publishes from the `main` branch at the repository root. To update the live site, edit the files, commit the changes, and push to `main`.
 
 ## Content Updates
 
