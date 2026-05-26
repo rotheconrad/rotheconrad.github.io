@@ -171,7 +171,7 @@ svg {
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.16fr) minmax(340px, 0.84fr);
-  align-items: stretch;
+  align-items: center;
   gap: clamp(32px, 4.5vw, 58px);
 }
 
@@ -272,22 +272,20 @@ h3 {
 
 .hero-visual {
   display: flex;
+  align-items: center;
   width: 100%;
 }
 
 .workbench-panel {
-  --drag-x: 0px;
-  --drag-y: 0px;
   --mx: 70%;
   --my: 22%;
   position: relative;
   isolation: isolate;
   display: grid;
-  grid-template-rows: auto minmax(168px, 1fr) auto auto;
+  grid-template-rows: auto auto auto auto;
   gap: 12px;
   overflow: hidden;
   width: 100%;
-  min-height: 100%;
   padding: clamp(16px, 2vw, 22px);
   background:
     radial-gradient(circle at var(--mx) var(--my), rgba(185, 133, 36, 0.2), transparent 12rem),
@@ -707,6 +705,36 @@ h3 {
   transform: translate(-50%, -50%);
   animation: map-ping 680ms ease-out forwards;
   pointer-events: none;
+}
+
+.workbench-map {
+  height: clamp(172px, 15vw, 196px);
+  min-height: 0;
+  background:
+    radial-gradient(circle at 22% 28%, rgba(40, 116, 93, 0.15), transparent 5.4rem),
+    radial-gradient(circle at 82% 68%, rgba(60, 110, 147, 0.13), transparent 5rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.76), rgba(238, 243, 239, 0.58));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.58);
+}
+
+.workbench-map::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(40, 116, 93, 0.05) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(40, 116, 93, 0.045) 1px, transparent 1px);
+  background-size: 34px 34px;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.workbench-canvas {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .workbench-output {

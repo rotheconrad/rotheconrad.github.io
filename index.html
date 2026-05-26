@@ -15,7 +15,7 @@
     />
     <meta property="og:type" content="website" />
     <title>Roth E. Conrad | Computational Genomics, Pangenomics & Scientific AI</title>
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260525-motion" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260525-canvas" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -82,42 +82,7 @@
               </div>
 
               <div class="workbench-map" data-workbench-map aria-hidden="true">
-                <div class="map-drift">
-                  <div class="map-layer map-layer-pangenome" data-map-layer="pangenome">
-                    <span class="graph-edge edge-a"></span>
-                    <span class="graph-edge edge-b"></span>
-                    <span class="graph-edge edge-c"></span>
-                    <span class="graph-edge edge-private"></span>
-                    <span class="graph-node node-a"></span>
-                    <span class="graph-node node-b"></span>
-                    <span class="graph-node node-c"></span>
-                    <span class="graph-node node-d"></span>
-                    <span class="graph-node node-e"></span>
-                    <span class="graph-node node-private"></span>
-                    <span class="variation-scout"></span>
-                  </div>
-
-                  <div class="map-layer map-layer-assembly" data-map-layer="assembly">
-                    <span class="reference-rail"></span>
-                    <span class="contig contig-a"></span>
-                    <span class="contig contig-b"></span>
-                    <span class="contig contig-c"></span>
-                    <span class="contig contig-d"></span>
-                    <span class="breakpoint-marker"></span>
-                    <span class="assembly-scan"></span>
-                  </div>
-
-                  <div class="map-layer map-layer-ai" data-map-layer="ai">
-                    <span class="synthesis-core"></span>
-                    <span class="evidence-card evidence-card-a"></span>
-                    <span class="evidence-card evidence-card-b"></span>
-                    <span class="evidence-card evidence-card-c"></span>
-                    <span class="claim-link claim-link-a"></span>
-                    <span class="claim-link claim-link-b"></span>
-                    <span class="claim-link claim-link-c"></span>
-                    <span class="evidence-particle"></span>
-                  </div>
-                </div>
+                <canvas class="workbench-canvas" data-workbench-canvas></canvas>
               </div>
 
               <div class="workbench-output">
@@ -613,6 +578,6 @@
       </div>
     </footer>
 
-    <script src="assets/js/main.js?v=20260525-motion"></script>
+    <script src="assets/js/main.js?v=20260525-canvas"></script>
   </body>
 </html>
