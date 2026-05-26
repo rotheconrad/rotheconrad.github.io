@@ -15,7 +15,7 @@
     />
     <meta property="og:type" content="website" />
     <title>Roth E. Conrad | Computational Genomics, Pangenomics & Scientific AI</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260525-workbench" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -73,28 +73,42 @@
             </div>
           </div>
 
-          <aside class="hero-visual" aria-label="Profile snapshot">
-            <div class="profile-panel">
-              <p class="panel-kicker">Operational Genomics</p>
-              <h2>Genomics infrastructure, end to end.</h2>
-              <dl class="snapshot-list">
-                <div>
-                  <dt>Pangenome Strategy</dt>
-                  <dd>Target-private variation, graph segments, and accession prioritization.</dd>
+          <aside class="hero-visual" aria-label="Interactive genomics workbench">
+            <div class="workbench-panel" data-workbench data-mode="pangenome">
+              <div class="workbench-top">
+                <p class="panel-kicker">Genome Workbench</p>
+                <div class="mode-control" aria-label="Workbench modes">
+                  <button class="is-active" type="button" data-workbench-mode="pangenome" aria-pressed="true">Pangenome</button>
+                  <button type="button" data-workbench-mode="assembly" aria-pressed="false">Assembly</button>
+                  <button type="button" data-workbench-mode="ai" aria-pressed="false">AI</button>
                 </div>
-                <div>
-                  <dt>Assembly Review</dt>
-                  <dd>Contig sorting, chimeric review, scaffolding, and identity validation.</dd>
-                </div>
-                <div>
-                  <dt>Scientific AI</dt>
-                  <dd>Evidence-aware workflows that keep claims tied to provenance and outputs.</dd>
-                </div>
-              </dl>
-              <div class="panel-tools" aria-label="Representative public tools">
-                <span>Representative tools</span>
-                <a href="https://github.com/USDA-ARS-GBRU/Panex_Privus" target="_blank" rel="noreferrer">Panex Privus</a>
-                <a href="https://github.com/rotheconrad/chromosort" target="_blank" rel="noreferrer">ChromoSort</a>
+              </div>
+
+              <div class="workbench-map" aria-hidden="true">
+                <span class="map-line map-line-a"></span>
+                <span class="map-line map-line-b"></span>
+                <span class="map-line map-line-c"></span>
+                <span class="map-node map-node-a"></span>
+                <span class="map-node map-node-b"></span>
+                <span class="map-node map-node-c"></span>
+                <span class="map-node map-node-d"></span>
+                <span class="map-node map-node-e"></span>
+                <span class="map-pulse"></span>
+              </div>
+
+              <div class="workbench-output">
+                <p class="output-label">Current build</p>
+                <h2 data-workbench-title>Target-private variation</h2>
+                <p data-workbench-copy>
+                  Find signal present in focal lines and absent from background panels.
+                </p>
+              </div>
+
+              <div class="workbench-flow" aria-label="Workflow progression">
+                <span>Question</span>
+                <span>Evidence</span>
+                <span>Tool</span>
+                <span>Decision</span>
               </div>
             </div>
           </aside>
@@ -576,6 +590,6 @@
       </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=20260525-workbench"></script>
   </body>
 </html>
